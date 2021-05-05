@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Segments Checkbox</title>
+    <style>
+		div #segment1 {
+			display: block;
+		}
+		
+		div #segment2 {
+			display: none;
+		}
+		
+		div #segment3 {
+			display: none;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>JavaScript Segments Test</h1>
+	<input type="checkbox" id="segment1toggle"> <label for="segment1toggle">Segment 1</label>
+	<input type="checkbox" id="segment2toggle"> <label for="segment2toggle">Segment 2</label>
+	<input type="checkbox" id="segment3toggle"> <label for="segment3toggle">Segment 3</label>
+	<button onclick="displaySegments()">Display</button>
+	<div id="segment1">Segment 1</div>
+	<div id="segment2">Segment 2</div>
+	<div id="segment3">Segment 3</div>
+	<script>
+		function displaySegments () {
+			if (document.getElementById("segment1toggle").checked == true){
+				document.getElementById("segment1").style.display = "block";
+			} else {
+				document.getElementById("segment1").style.display = "none";
+			}
+			
+			if (document.getElementById("segment2toggle").checked == true){
+				document.getElementById("segment2").style.display = "block";
+			} else {
+				document.getElementById("segment2").style.display = "none";
+			}
+			
+			if (document.getElementById("segment3toggle").checked == true){
+				document.getElementById("segment3").style.display = "block";
+			} else {
+				document.getElementById("segment3").style.display = "none";
+			}
+		}
+	</script>
+  </body>
+</html>

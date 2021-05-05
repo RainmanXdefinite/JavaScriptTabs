@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Segments Buttons</title>
+    <style>
+		div #segment1 {
+			display: block;
+		}
+		
+		div #segment2 {
+			display: none;
+		}
+		
+		div #segment3 {
+			display: none;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>JavaScript Segments Test</h1>
+	<button onclick="displaySegment1()">Display Segment 1</button>
+	<button onclick="displaySegment2()">Display Segment 2</button>
+	<button onclick="displaySegment3()">Display Segment 3</button>
+	<button onclick="displayAllSegments()">Display All</button>
+	<button onclick="displayNoSegments()">Display None</button>
+	<div id="segment1">Segment 1</div>
+	<div id="segment2">Segment 2</div>
+	<div id="segment3">Segment 3</div>
+	<script>
+		function displaySegment1 () {
+			document.getElementById("segment1").style.display = "block";
+			document.getElementById("segment2").style.display = "none";
+			document.getElementById("segment3").style.display = "none";
+		}
+		
+		function displaySegment2 () {
+			document.getElementById("segment1").style.display = "none";
+			document.getElementById("segment2").style.display = "block";
+			document.getElementById("segment3").style.display = "none";
+		}
+		
+		function displaySegment3 () {
+			document.getElementById("segment1").style.display = "none";
+			document.getElementById("segment2").style.display = "none";
+			document.getElementById("segment3").style.display = "block";
+		}
+		
+		function displayAllSegments () {
+			document.getElementById("segment1").style.display = "block";
+			document.getElementById("segment2").style.display = "block";
+			document.getElementById("segment3").style.display = "block";
+		}
+		
+		function displayNoSegments () {
+			document.getElementById("segment1").style.display = "none";
+			document.getElementById("segment2").style.display = "none";
+			document.getElementById("segment3").style.display = "none";
+		}
+	</script>
+  </body>
+</html>
